@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">GPS координаты</string>
+
+    <string name="Share_your_location">Отправить координаты</string>
+    <string name="unknown">неизвестно</string>
+    <string name="Longitude">Долгота:</string>
+    <string name="Latitude">Широта:</string>
+    <string name="I_am_at_this">Мои</string>
+    <string name="and_this">и</string>
+    <string name="and_this_is_link_to_the_map"> также можно открыть мое местоположение на карте:</string>
+    <string name="I_want_to_share_this_location_with_you">Хочу поделиться этим местоположением:</string>
+    <string name="determining_location">Определение местоположения…</string>
+    <string name="Marker_Latitude">Широта маркера:</string>
+    <string name="Marker_Longitude">Долгота маркера:</string>
+    <string name="You_are_here">Вы здесь!</string>
+
+    <string name="Map_type">Настройки карты</string>
+    <string name="Map_type_text">Тип карты</string>
+    <string name="Map_zoom_controls">Показывать зум-контролы</string>
+    <string name="Message_settings">Сообщение</string>
+    <string name="Message_text">Тип сообщения</string>
+    <string name="linkMap">Я здесь: </string>
+    <string name="Rate_settings">Нравится приложение?</string>
+    <string name="Rate">Поставь нам 5 звезд ★★★★★</string>
+
+</resources>

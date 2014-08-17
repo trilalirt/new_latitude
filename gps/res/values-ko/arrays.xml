@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries">
+        <item>기본보기</item>
+        <item>위성 사진보기</item>
+        <item>지형보기</item>
+        <item>하이브리드보기</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="mess_entries">
+        <item>링크 만</item>
+        <item>좌표</item>
+        <item>링크 및 좌표</item>
+
+    </string-array>
+    <string-array name="mess_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+</resources>

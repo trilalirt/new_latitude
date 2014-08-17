@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+     >
+
+   
+           
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        class="com.google.android.gms.maps.MapFragment"
+        
+         >
+
+    </fragment>
+         
+         
+         <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dip"
+             >
+
+
+
+        <RelativeLayout
+            android:id="@+id/share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            >
+
+             <Button android:id="@+id/sh"
+             android:layout_width="56dp"
+             android:layout_height="56dp"
+             android:background="@drawable/button_share"
+     		 android:layout_alignParentLeft="true"
+     		 android:layout_centerVertical="true"
+             />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sh"
+                android:layout_marginLeft="10dip"
+                android:text="@string/unknown"
+                android:textColor="#424242"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sh"
+                android:layout_marginLeft="10dip"
+                android:layout_below="@id/TextView02"
+                android:text="@string/unknown"
+                android:textColor="#424242"
+                android:textSize="20dip" />
+
+
+         </RelativeLayout>
+
+
+             <RelativeLayout
+                 android:id="@+id/share_marker_layout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@id/share_layout"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="10dp"
+                 android:layout_alignParentLeft="true"
+                 android:visibility="gone">
+
+                 <Button android:id="@+id/sh_marker"
+                     android:layout_width="56dp"
+                     android:layout_height="56dp"
+                     android:background="@drawable/button_share_marker"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     />
+
+                 <TextView
+                     android:id="@+id/TextView05"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toRightOf="@id/sh_marker"
+                     android:layout_marginLeft="10dip"
+                     android:textColor="#424242"
+                     android:textSize="20dip" />
+
+
+                 <TextView
+                     android:id="@+id/TextView06"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/TextView05"
+                     android:layout_toRightOf="@id/sh_marker"
+                     android:layout_marginLeft="10dip"
+                     android:textColor="#424242"
+                     android:textSize="20dip" />
+
+
+                 </RelativeLayout>
+
+              <com.google.android.gms.ads.AdView
+
+              android:id="@+id/adView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              ads:adSize="BANNER"
+              ads:adUnitId="a15269970578fef"
+
+              >
+
+         </com.google.android.gms.ads.AdView>
+
+            <RelativeLayout
+                android:id="@+id/zoomLayout"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="75dp"
+
+                >
+             <Button
+                 android:id="@+id/zoom_in"
+                 android:layout_width="42dp"
+                 android:layout_height="42dp"
+                 android:background="@drawable/button_plus"
+                 android:layout_centerHorizontal="true"/>
+
+             <Button
+                 android:id="@+id/zoom_out"
+                 android:layout_width="42dp"
+                 android:layout_height="42dp"
+                 android:layout_below="@id/zoom_in"
+                 android:layout_marginTop="4dp"
+                 android:background="@drawable/button_minus"
+                 android:layout_centerHorizontal="true"/>
+              </RelativeLayout>
+
+             <Button
+                 android:id="@+id/location"
+                  android:layout_width="56dp"
+                 android:layout_height="56dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 android:background="@drawable/button_location_searching"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginBottom="3dip"
+                 android:layout_marginLeft="5dip"/>
+
+             <Button android:id="@+id/settings"
+                 android:layout_width="56dp"
+                 android:layout_height="56dp"
+                 android:background="@drawable/button_settings"
+                 android:layout_marginTop="60dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+
+                 />
+
+             </RelativeLayout>
+
+
+
+
+
+
+
+
+         </RelativeLayout>

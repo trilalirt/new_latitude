@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Latitude</string>
+
+    <string name="Share_your_location">Wyślij współrzędne</string>
+    <string name="unknown">nieznana</string>
+    <string name="Longitude">Długość: </string>
+    <string name="Latitude">Szerokość: </string>
+    <string name="I_am_at_this">Moje</string>
+    <string name="and_this">i</string>
+    <string name="and_this_is_link_to_the_map">również możesz zobaczyć moją lokalizacją na mapie:</string>
+    <string name="I_want_to_share_this_location_with_you">Chcę podzielić tę lokalizację:</string>
+    <string name="determining_location">Pobieranie lokalizacji…</string>
+    <string name="Marker_Latitude">Długość znacznika:</string>
+    <string name="Marker_Longitude">Szerokość znacznika:</string>
+    <string name="You_are_here">Jesteś tutaj!</string>
+
+    <string name="Map_type">Ustawienia Mapy</string>
+    <string name="Map_type_text">Typ mapy</string>
+    <string name="Map_zoom_controls">Pokaż zoom kontrola</string>
+    <string name="Message_settings">Posłanie</string>
+    <string name="Message_text">Typ tekstu</string>
+    <string name="linkMap">Jestem tutaj: </string>
+    <string name="Rate_settings">Podoba się ta aplikacja?</string>
+    <string name="Rate">Recenzję Latitude ★★★★★</string>
+
+</resources>

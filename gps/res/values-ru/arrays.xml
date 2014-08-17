@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries">
+        <item>Обычная карта</item>
+        <item>Вид со спутника</item>
+        <item>Ландшафтная карта</item>
+        <item>Гибридная карта</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="mess_entries">
+        <item>Только ссылка</item>
+        <item>Только координаты</item>
+        <item>Ссылка и координаты</item>
+
+    </string-array>
+    <string-array name="mess_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+</resources>

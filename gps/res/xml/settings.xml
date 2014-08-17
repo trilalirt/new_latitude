@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/Map_type"/>
+
+    <com.triladroid.gps.MyListPreference
+        android:title="@string/Map_type_text"
+        android:key="listPref"
+        android:defaultValue="1"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues" />
+
+    <CheckBoxPreference
+        android:title="@string/Map_zoom_controls"
+        android:key="zoomPref"
+        android:defaultValue="true"
+        />
+
+    <PreferenceCategory
+        android:title="@string/Message_settings"/>
+
+    <com.triladroid.gps.MyListPreference
+        android:title="@string/Message_text"
+        android:key="shareMessage"
+        android:defaultValue="3"
+        android:entries="@array/mess_entries"
+        android:entryValues="@array/mess_values"
+        />
+
+    <PreferenceCategory
+        android:title="@string/Rate_settings"/>
+
+    <Preference
+        android:title="@string/Rate"
+        android:key="Rate"
+
+        />
+
+
+</PreferenceScreen>
