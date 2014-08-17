@@ -391,6 +391,7 @@ public class MainActivity extends Activity implements GoogleMap.OnMyLocationChan
             findMeButton.setBackgroundResource(R.drawable.button_location_found);
             zoom(location);
         }
+
         mylocationlocation = location;
 
         String strLongitude = getString(R.string.Longitude) + " " + MyConvert(location.getLongitude());
