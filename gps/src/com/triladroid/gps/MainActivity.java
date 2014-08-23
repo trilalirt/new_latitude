@@ -169,36 +169,39 @@ public class MainActivity extends Activity implements GoogleMap.OnMyLocationChan
 	{
 		@Override
 		public void onClick(View v) {
-		  TextView latitudetext = (TextView)findViewById(R.id.TextView02);
-		  TextView longitutetext = (TextView)findViewById(R.id.TextView04);
-          String strlatitude = latitudetext.getText().toString();
-          String strlongitute = longitutetext.getText().toString();
 
-          Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-          emailIntent.setType("text/plain");
+          if (mylocationlocation != null) {
+              TextView latitudetext = (TextView) findViewById(R.id.TextView02);
+              TextView longitutetext = (TextView) findViewById(R.id.TextView04);
+              String strlatitude = latitudetext.getText().toString();
+              String strlongitute = longitutetext.getText().toString();
 
-            if (n==1)
-            {
-                sharetext = getString(R.string.linkMap) + " "+ "http://maps.google.com/maps?&z=10&q=" + mylocationlocation.getLatitude()
-                        + "+" + mylocationlocation.getLongitude() + "(Pool+Location)&mrt=yp";
-            }
-            if (n==2)
-            {
-                sharetext = getString(R.string.I_am_at_this) +" " + strlatitude + " " + getString(R.string.and_this) + " " + strlongitute;
-            }
-            if (n==3)
-            {
-                sharetext = getString(R.string.I_am_at_this) +" " + strlatitude + " " + getString(R.string.and_this) +
-                        " " + strlongitute + " "+getString(R.string.and_this_is_link_to_the_map) +" " +
-                        "http://maps.google.com/maps?&z=10&q=" + mylocationlocation.getLatitude() + "+" +
-                        mylocationlocation.getLongitude() + "(Pool+Location)&mrt=yp";
-            }
+              Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+              emailIntent.setType("text/plain");
+
+              if (n == 1) {
+                  sharetext = getString(R.string.linkMap) + " " + "http://maps.google.com/maps?&z=10&q=" + mylocationlocation.getLatitude()
+                          + "+" + mylocationlocation.getLongitude() + "(Pool+Location)&mrt=yp";
+              }
+              if (n == 2) {
+                  sharetext = getString(R.string.I_am_at_this) + " " + strlatitude + " " + getString(R.string.and_this) + " " + strlongitute;
+              }
+              if (n == 3) {
+                  sharetext = getString(R.string.I_am_at_this) + " " + strlatitude + " " + getString(R.string.and_this) +
+                          " " + strlongitute + " " + getString(R.string.and_this_is_link_to_the_map) + " " +
+                          "http://maps.google.com/maps?&z=10&q=" + mylocationlocation.getLatitude() + "+" +
+                          mylocationlocation.getLongitude() + "(Pool+Location)&mrt=yp";
+              }
 
 
-            emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, sharetext);
+              emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, sharetext);
 
-          startActivity(emailIntent);
-			
+              startActivity(emailIntent);
+          }
+            else
+          {
+              Toast.makeText(MainActivity.this, getString(R.string.determining_location), Toast.LENGTH_SHORT).show();
+          }
 		}  
 	};
 

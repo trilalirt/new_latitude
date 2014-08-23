@@ -23,6 +23,8 @@
     <string name="Message_text">Typ tekstu</string>
     <string name="linkMap">Jestem tutaj: </string>
     <string name="Rate_settings">Podoba się ta aplikacja?</string>
-    <string name="Rate">Recenzję Latitude ★★★★★</string>
+    <string name="Rate">Oceń Latitude ★★★★★</string>
+    <string name="facebook">Nasza strona Facebook</string>
+    <string name="facebook_summary">Zadawaj pytania i sledzi za nowinami</string>
 
 </resources>

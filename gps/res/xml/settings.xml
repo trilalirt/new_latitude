@@ -38,5 +38,12 @@
 
         />
 
+    <Preference
+        android:title="@string/facebook"
+        android:summary="@string/facebook_summary"
+        android:key="facebook"
+
+        />
+
 
 </PreferenceScreen>

@@ -24,5 +24,7 @@
     <string name="linkMap">Я здесь: </string>
     <string name="Rate_settings">Нравится приложение?</string>
     <string name="Rate">Поставь нам 5 звезд ★★★★★</string>
+    <string name="facebook">Наша страничка Facebook</string>
+    <string name="facebook_summary">Воросы и ответы</string>
 
 </resources>

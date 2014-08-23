@@ -30,6 +30,15 @@ public class PrefActivity extends PreferenceFragment {
             }
         });
 
+        Preference facebookPref = findPreference("facebook");
+        facebookPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/Latitude/1461777317410125")));
+                return false;
+            }
+        });
+
     }
 
     @Override

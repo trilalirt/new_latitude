@@ -13,8 +13,17 @@ android {
     defaultConfig {
         minSdkVersion 13
         targetSdkVersion 19
-        versionCode 11
-        versionName "3.0"
+        versionCode 12
+        versionName "3.1"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("/Uses/trila/AndroidStudioProjects/latitude/assets/latitudekey.jks")
+            storePassword "blademas"
+            keyAlias "latitude"
+            keyPassword "blademas"
+        }
     }
 
     buildTypes {
@@ -42,6 +51,10 @@ android {
                 debug.setRoot('build-types/debug')
                 release.setRoot('build-types/release')
             }
+        }
+
+        release {
+            signingConfig signingConfigs.release
         }
     }
 }

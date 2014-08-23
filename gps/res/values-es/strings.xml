@@ -24,4 +24,7 @@
     <string name="linkMap">Yo estoy aquí: </string>
     <string name="Rate_settings">¿Te gusta esta aplicación? </string>
     <string name="Rate">Revise con ★★★★★</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_summary">¿Necesitas ayuda? Pregúntanos.</string>
+
 </resources>
